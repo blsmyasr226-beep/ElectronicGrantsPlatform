@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="قدم طلبك للحصول على منحة دراسية">
+    <title>تقديم طلب منحة | منصة منحتي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل الرئيسي -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <!-- شعار المنصة -->
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">منحتي</span>
+                </a>
+                
+                <!-- قائمة التنقل -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="scholarships.html" class="nav-link">المنح</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="apply.html" class="nav-link active">التقديم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <!-- صفحة التقديم -->
+        <section class="apply-page">
+            <div class="container">
+                <h1 class="page-title">تقديم طلب منحة دراسية</h1>
+                <p class="page-subtitle">املأ النموذج التالي للتقديم على المنحة المناسبة لك</p>
+                
+                <!-- نموذج التقديم -->
+                <div class="form-container">
+                    <form class="application-form" action="#" method="post">
+                        <!-- حقل الاسم الكامل -->
+                        <div class="form-group">
+                            <label for="fullname" class="form-label">الاسم الكامل *</label>
+                            <input type="text" id="fullname" name="fullname" class="form-input" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        
+                        <!-- حقل البريد الإلكتروني -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required>
+                        </div>
+                        
+                        <!-- حقل رقم الهاتف -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+966 5XXXXXXXX" required>
+                        </div>
+                        
+                        <!-- حقل الدولة -->
+                        <div class="form-group">
+                            <label for="country" class="form-label">الدولة *</label>
+                            <select id="country" name="country" class="form-input" required>
+                                <option value="">اختر دولتك</option>
+                                <option value="sa">المملكة العربية السعودية</option>
+                                <option value="ae">الإمارات العربية المتحدة</option>
+                                <option value="eg">مصر</option>
+                                <option value="jo">الأردن</option>
+                                <option value="kw">الكويت</option>
+                                <option value="qa">قطر</option>
+                                <option value="om">عمان</option>
+                                <option value="bh">البحرين</option>
+                                <option value="other">دولة أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <!-- حقل اختيار المنحة -->
+                        <div class="form-group">
+                            <label for="scholarship" class="form-label">اختيار المنحة *</label>
+                            <select id="scholarship" name="scholarship" class="form-input" required>
+                                <option value="">اختر المنحة المرغوبة</option>
+                                <option value="harvard">منحة جامعة هارفارد</option>
+                                <option value="oxford">منحة جامعة أكسفورد</option>
+                                <option value="tokyo">منحة جامعة طوكيو</option>
+                                <option value="toronto">منحة جامعة تورنتو</option>
+                                <option value="melbourne">منحة جامعة ملبورن</option>
+                                <option value="kaust">منحة جامعة الملك عبدالله</option>
+                            </select>
+                        </div>
+                        
+                        <!-- حقل رفع السيرة الذاتية -->
+                        <div class="form-group">
+                            <label for="cv" class="form-label">رفع السيرة الذاتية *</label>
+                            <div class="file-upload">
+                                <input type="file" id="cv" name="cv" class="form-input file-input" accept=".pdf,.doc,.docx" required>
+                                <p class="file-hint">الصيغ المسموحة: PDF, DOC, DOCX</p>
+                            </div>
+                        </div>
+                        
+                        <!-- حقل الرسالة التحفيزية -->
+                        <div class="form-group">
+                            <label for="motivation" class="form-label">رسالة تحفيزية *</label>
+                            <textarea id="motivation" name="motivation" class="form-input form-textarea" placeholder="اكتب رسالة تحفيزية توضح فيها أسباب اختيارك لهذه المنحة وأهدافك المستقبلية" rows="6" required></textarea>
+                        </div>
+                        
+                        <!-- زر الإرسال -->
+                        <button type="submit" class="btn btn-primary btn-block">إرسال الطلب</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- قسم الروابط السريعة -->
+                <div class="footer-section">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="scholarships.html">المنح الدراسية</a></li>
+                        <li><a href="apply.html">تقديم طلب</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- قسم التواصل -->
+                <div class="footer-section">
+                    <h3 class="footer-title">معلومات التواصل</h3>
+                    <ul class="footer-contact">
+                        <li>📧 البريد الإلكتروني: info@scholarship.com</li>
+                        <li>📱 الهاتف: +966 123 456 789</li>
+                        <li>📍 العنوان: الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+                
+                <!-- قسم وسائل التواصل -->
+                <div class="footer-section">
+                    <h3 class="footer-title">تابعنا على</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="فيسبوك">📘</a>
+                        <a href="#" class="social-link" aria-label="تويتر">🐦</a>
+                        <a href="#" class="social-link" aria-label="إنستغرام">📷</a>
+                        <a href="#" class="social-link" aria-label="لينكد إن">💼</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- حقوق النشر -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 منصة منحتي الدراسية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+  <script src="main.js"></script>
+</body>
+</html>
